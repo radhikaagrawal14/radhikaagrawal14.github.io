@@ -8,6 +8,7 @@ html,
 body {
   width: 100%;
   height: 100%;
+  margin: 0;
 }
 
 body {
@@ -112,10 +113,17 @@ a.button6:active {
   }
 }
 
-.test{
-  position: absolute;
-  left: 50%;
-  top: 80%;
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+.Details{
+  /* background-color: blue; */
+
+  position: relative; /*it can be fixed too*/
+  left:0; right:0;
+  top:100%; bottom:0;
+  margin:auto;
+  padding-top: 10%;
+  text-align: center;
+  /*this to solve "the content will not be cut when the window is smaller than the content": */
+  max-width:100%;
+  max-height:100%;
+  overflow:auto;
 }
